@@ -30,7 +30,7 @@ from dotenv import load_dotenv
 
 Authenticate:
 ```python
-load_dotenv(os.path.expanduser('/content/supervisely.env'))
+load_dotenv(os.path.expanduser('~/supervisely.env'))
 api = sly.Api.from_env()
 my_teams = api.team.get_list()
 team = my_teams[0]

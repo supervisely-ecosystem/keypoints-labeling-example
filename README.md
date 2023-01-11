@@ -65,8 +65,8 @@ Define geometry config parameters:
 ```python
 n_keypoints = 17 # human body has 17 keypoints
 color = [255, 0, 0] # red
-skeleton = [[15, 13], [13, 11], [16, 14], [14, 12], [11, 12], # links between nodes (e.g. node 15 is linked to node 13)
-            [5, 11], [6, 12], [5, 6], [5, 7], [6, 8], [7, 9],
+skeleton = [[15, 13], [13, 11], [16, 14], [14, 12], [11, 12], # links between nodes
+            [5, 11], [6, 12], [5, 6], [5, 7], [6, 8], [7, 9], # e.g. node 5 is linked to node 11
             [8, 10], [1, 2], [0, 1], [0, 2], [1, 3], [2, 4],
             [3, 5], [4, 6]]
 config = build_config(n_keypoints, node_color=color, edge_color=color, skeleton=skeleton)

@@ -112,7 +112,35 @@ ann_json = api.annotation.download_json(image_info.id)
 print('annotaiton:\n', json.dumps(ann_json, indent=4))
 ```
 
-## Result
+## Visualize Result
+
+Draw annotation:
+```python
+ann = sly.Annotation.from_json(ann_json, project_meta)
+output_path = 'images/Labeled.jpg'
+ann.draw_pretty(image, output_path=output_path, thickness=3)
+```
+
+Function for image visualization:
+```python
+def visualize_image(image_filepath):
+  plt.figure(figsize=(12, 8))
+  image = mpimg.imread(image_filepath)
+  imageplot = plt.imshow(image)
+  plt.axis('off')
+  plt.show()
+```
+
+Visualize result:
+```python
+visualize_image(output_path)
+```
+> If you are facing "Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure" UserWarning,
+> run the following comand in terminal:
+> ```bash
+  sudo apt-get install python3-tk
+  ```
+
 
 ![Labeled](https://user-images.githubusercontent.com/91027877/211782477-fa09bfbb-82b3-47ba-b86e-0187726e294f.jpg)
 

@@ -135,11 +135,10 @@ Visualize result:
 ```python
 visualize_image(output_path)
 ```
-> If you are facing "Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure" UserWarning,
-> run the following comand in terminal:
-> ```bash
-  sudo apt-get install python3-tk
-  ```
+If you are facing "Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure" UserWarning, run the following comand in terminal:
+```bash
+sudo apt-get install python3-tk
+```
 
 
 ![Labeled](https://user-images.githubusercontent.com/91027877/211782477-fa09bfbb-82b3-47ba-b86e-0187726e294f.jpg)

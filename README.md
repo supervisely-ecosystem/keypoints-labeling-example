@@ -122,7 +122,7 @@ api.annotation.upload_ann(image_info.id, ann)
 ## Working With Keypoints In Annotation Tool
 
 Example above shows how to programmaticaly create keypoints annotation, but you can also use Supervisely annotation tool.
-GIF below demonstrates keypoint creation algorithm in annotation tool:
+GIF below demonstrates keypoints graph creation algorithm in annotation tool:
 
 ## Download Data
 

@@ -148,5 +148,8 @@ GIFs below demonstrate keypoints graph template creation algorithm in annotation
 3. Link nodes with each other using edges:
 ![keypoints_2](https://user-images.githubusercontent.com/91027877/212097299-f607c339-7f10-4c32-a85f-f5ff48877743.gif)
 
+4. Save result and go back to annotation tool:
+![keypoints_3](https://user-images.githubusercontent.com/91027877/212101921-a9825133-d2ee-4945-88ad-48630700d507.gif)
+
 
 

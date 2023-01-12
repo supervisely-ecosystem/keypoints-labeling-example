@@ -28,7 +28,7 @@ import json
 from dotenv import load_dotenv
 ```
 
-Authenticate:
+Authenticate (learn more here - https://developer.supervise.ly/getting-started/first-steps/basics-of-authentication):
 ```python
 load_dotenv(os.path.expanduser('~/supervisely.env'))
 api = sly.Api.from_env()

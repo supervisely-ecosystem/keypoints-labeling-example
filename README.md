@@ -122,8 +122,12 @@ api.annotation.upload_ann(image_info.id, ann)
 ## Working With Keypoints In Annotation Tool
 
 Example above shows how to programmaticaly create keypoints annotation, but you can also use Supervisely annotation tool.
-GIF below demonstrates keypoints graph creation algorithm in annotation tool:
-![Keypoints](https://user-images.githubusercontent.com/91027877/212076405-81e9cc63-d2dc-494f-847d-b6d049757cd1.gif)
+
+GIFs below demonstrate keypoints graph template creation algorithm in annotation tool.
+
+1. Click on "keypoints" button in annotation tool and start creating graph template:
+![keypoints_0](https://user-images.githubusercontent.com/91027877/212082648-72ca9cf2-0033-4aac-a1b7-211fa13030e1.gif)
+
 
 
 ## Download Data

@@ -151,5 +151,5 @@ GIFs below demonstrate keypoints graph template creation algorithm in annotation
 4. Save result and go back to annotation tool:
 ![keypoints_3](https://user-images.githubusercontent.com/91027877/212101921-a9825133-d2ee-4945-88ad-48630700d507.gif)
 
-
+5. Now you can use your graph template to label the image:
 

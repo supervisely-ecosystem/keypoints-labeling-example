@@ -9,7 +9,7 @@ In this tutorial we will show you how to use sly.GraphNodes class to create data
 
 ## Installation & Authentication
 
-Run the following command:
+Run the following command in terminal:
 ```
 pip install supervisely
 ```

@@ -145,3 +145,8 @@ GIFs below demonstrate keypoints graph template creation algorithm in annotation
 2. Start creating graph tempate by setting keypoints (nodes) on the image (you can change the size of nodes with the help of mouse scroll wheel):
 ![keypoints_1](https://user-images.githubusercontent.com/91027877/212090976-353736f2-5d47-45ea-bc5d-a5c3756e21b0.gif)
 
+3. Link nodes with each other using edges and save result:
+https://user-images.githubusercontent.com/91027877/212096987-f9abd2b1-c72f-497f-af17-6fe65a74d802.mp4
+
+
+

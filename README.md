@@ -119,17 +119,6 @@ ann = sly.Annotation(img_size=[1280, 1920], labels=[label])
 api.annotation.upload_ann(image_info.id, ann)
 ```
 
-## Working With Keypoints In Annotation Tool
-
-Example above shows how to programmaticaly create keypoints annotation, but you can also use Supervisely annotation tool.
-
-GIFs below demonstrate keypoints graph template creation algorithm in annotation tool.
-
-1. Click on "keypoints" button in annotation tool and start creating graph template:
-![keypoints_0](https://user-images.githubusercontent.com/91027877/212082648-72ca9cf2-0033-4aac-a1b7-211fa13030e1.gif)
-
-
-
 ## Download Data
 
 ```python
@@ -143,3 +132,12 @@ print('annotaiton:\n', json.dumps(ann_json, indent=4))
 ## Result
 
 ![Labeled](https://user-images.githubusercontent.com/91027877/211782477-fa09bfbb-82b3-47ba-b86e-0187726e294f.jpg)
+
+## Working With Keypoints In Annotation Tool
+
+Example above shows how to programmaticaly create keypoints annotation, but you can also use Supervisely annotation tool.
+
+GIFs below demonstrate keypoints graph template creation algorithm in annotation tool.
+
+1. Click on "keypoints" button in annotation tool and start creating graph template:
+![keypoints_0](https://user-images.githubusercontent.com/91027877/212082648-72ca9cf2-0033-4aac-a1b7-211fa13030e1.gif)

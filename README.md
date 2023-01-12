@@ -7,8 +7,6 @@ In this tutorial we will show you how to use sly.GraphNodes class to create data
 * programmatically create annotation (two bounding boxes and tag) and upload it to image
 * download image and annotation
 
-You can try this example for yourself: VSCode project config, original image, and python script for this tutorial are ready on [GitHub](https://github.com/supervisely-ecosystem/keypoints-labelling-example).
-
 ## Installation & Authentication
 
 Run the following command:
@@ -28,7 +26,7 @@ import json
 from dotenv import load_dotenv
 ```
 
-Authenticate (learn more here - https://developer.supervise.ly/getting-started/first-steps/basics-of-authentication):
+Authenticate (learn more [here](https://developer.supervise.ly/getting-started/first-steps/basics-of-authentication)):
 ```python
 load_dotenv(os.path.expanduser('~/supervisely.env'))
 api = sly.Api.from_env()

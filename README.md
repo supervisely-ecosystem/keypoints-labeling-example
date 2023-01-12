@@ -139,5 +139,5 @@ Example above shows how to programmaticaly create keypoints annotation, but you 
 
 GIFs below demonstrate keypoints graph template creation algorithm in annotation tool.
 
-1. Click on "keypoints" button in annotation tool and start creating graph template:
+1. Open your dataset, choose image and click on "Add keypoints" button in annotation tool and start creating graph template:
 ![keypoints_0](https://user-images.githubusercontent.com/91027877/212082648-72ca9cf2-0033-4aac-a1b7-211fa13030e1.gif)

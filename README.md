@@ -151,7 +151,7 @@ GIFs below demonstrate keypoints graph template creation algorithm in annotation
 4. Save result and go back to annotation tool:
 ![keypoints_3](https://user-images.githubusercontent.com/91027877/212101921-a9825133-d2ee-4945-88ad-48630700d507.gif)
 
-5. Now you can use your graph template to label the image:
+5. Now you can use your graph template to label the image. Using templates can significantly speed up data labelling process: it is much easier to create one template and then tune only its width and height instead of building keypoints graph for each object on the image:
 ![keypoints_4](https://user-images.githubusercontent.com/91027877/212112189-b35c15f9-7d63-4386-8058-528381aacf79.gif)
 
 6. Result

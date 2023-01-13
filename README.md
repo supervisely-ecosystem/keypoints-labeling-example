@@ -38,7 +38,7 @@ workspace = api.workspace.get_list(team.id)[0]
 ## Input Data
 ![Surfer](https://user-images.githubusercontent.com/91027877/211779545-83935382-b8a2-49cb-9156-3ce07f902399.jpg)
 
-## Create Project On Server & Build Geometry Config
+## Create Project On Server
 
 Create project and dataset:
 ```python
@@ -46,6 +46,8 @@ project = api.project.create(workspace.id, 'Surfer Pose Estimation', change_name
 dataset = api.dataset.create(project.id, 'Surfing', change_name_if_conflict=True)
 print(f'Project {project.id} with dataset {dataset.id} are created')
 ```
+
+## Build Geometry Config & Create Annotation Class
 
 Build geometry config :
 ```python

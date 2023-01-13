@@ -93,6 +93,18 @@ template.add_edge(src="left_ear", dst="left_shoulder", color=[255, 0, 0])
 template.add_edge(src="right_ear", dst="right_shoulder", color=[255, 0, 0])
 ```
 
+You can check how your template looks like using the following code:
+```python
+img = sly.image.read("images/surfer.jpg")
+template.draw(image=img)
+sly.image.write("images/template.jpg", img)
+```
+
+You can also transfer your template to JSON format using:
+``python
+template.to_json()
+```
+
 Create annotation class:
 ```python
 surfer = sly.ObjClass('surfer',

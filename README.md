@@ -99,8 +99,9 @@ img = sly.image.read("images/surfer.jpg")
 template.draw(image=img)
 sly.image.write("images/template.jpg", img)
 ```
-![image](https://user-images.githubusercontent.com/91027877/212390957-3fd8085f-6451-4406-9086-f3e7dcf4071c.png)
 
+Or simply check in annotation tool:
+![image](https://user-images.githubusercontent.com/91027877/212391183-d7a778a5-c506-4655-a654-03ff92a5d0f1.png)
 
 You can also transfer your template to JSON format using:
 ```python

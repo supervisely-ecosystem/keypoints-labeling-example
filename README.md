@@ -101,7 +101,7 @@ sly.image.write("images/template.jpg", img)
 ```
 
 You can also transfer your template to JSON format using:
-``python
+```python
 template.to_json()
 ```
 

@@ -18,7 +18,7 @@ Import necessary libraries:
 
 ```python
 import supervisely as sly
-from supervisely.geometry.graph import Node
+from supervisely.geometry.graph import Node, KeypointsTemplate
 import os
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg

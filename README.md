@@ -100,9 +100,6 @@ template.draw(image=img)
 sly.image.write("images/template.jpg", img)
 ```
 
-Or simply check in annotation tool:
-![image](https://user-images.githubusercontent.com/91027877/212391183-d7a778a5-c506-4655-a654-03ff92a5d0f1.png)
-
 You can also transfer your template to JSON format using:
 ```python
 template.to_json()
@@ -116,6 +113,13 @@ surfer = sly.ObjClass('surfer',
 project_meta = sly.ProjectMeta(obj_classes=[surfer])
 api.project.update_meta(project.id, project_meta.to_json())
 ```
+
+Now you can go to Supervisely platform, open your "Surfer Pose Estimation" project and check that class with "keypoints" geometry type was successfully added to your project:
+![initialized_class](https://user-images.githubusercontent.com/91027877/212467658-0a8b709a-7cc0-4f67-bb5a-9666591502b8.gif)
+
+You can also go to annotation tool and check how your keypoints template looks like. As can be seen on the image below, we have successfully created human keypoints template, which can be adapted to any human pose:
+![created_template](https://user-images.githubusercontent.com/91027877/212468017-2e6be8b9-5a60-4e01-9c50-da4adb2c55dc.gif)
+
 
 ## Upload Image
 ```python
@@ -211,8 +215,11 @@ If you are facing "Matplotlib is currently using agg, which is a non-GUI backend
 sudo apt-get install python3-tk
 ```
 
-
 ![Labeled](https://user-images.githubusercontent.com/91027877/211782477-fa09bfbb-82b3-47ba-b86e-0187726e294f.jpg)
+
+You can also check that annotation was successfully created in annotation tool:
+![annotation](https://user-images.githubusercontent.com/91027877/212468262-60e9e418-cee4-4a38-acec-3030e25bdb07.gif)
+
 
 ## Working With Keypoints In Annotation Tool
 
@@ -232,7 +239,7 @@ GIFs below demonstrate keypoints graph template creation algorithm in annotation
 4. Save result and go back to annotation tool:
 ![keypoints_3](https://user-images.githubusercontent.com/91027877/212101921-a9825133-d2ee-4945-88ad-48630700d507.gif)
 
-5. Now you can use your graph template to label the image. Using templates can significantly speed up data labelling process: it is much easier to create one template and then tune only its width and height instead of building keypoints graph for each object on the image:
+5. Now you can use your graph template to label the image. Using templates can significantly speed up data labelling process: it is much easier to create one template and then tune only its width and height instead of building keypoints graph for each object on the image from scratch:
 ![keypoints_4](https://user-images.githubusercontent.com/91027877/212112189-b35c15f9-7d63-4386-8058-528381aacf79.gif)
 
 6. Result

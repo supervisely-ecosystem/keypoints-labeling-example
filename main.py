@@ -51,7 +51,7 @@ template.add_edge(src="left_ear", dst="left_shoulder")
 template.add_edge(src="right_ear", dst="right_shoulder")
 # visualize your keypoints template
 template_img = sly.image.read("images/girl.jpg")
-template.draw(image=template_img)
+template.draw(image=template_img, thickness=7)
 sly.image.write("images/template.jpg", template_img)
 # you can also transfer your template to json
 template_json = template.to_json()

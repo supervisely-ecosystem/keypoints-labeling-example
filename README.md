@@ -132,7 +132,7 @@ dataset = api.dataset.create(project.id, "Person with dog", change_name_if_confl
 print(f"Project {project.id} with dataset {dataset.id} are created")
 ```
 
-Now let's create annotation class using our keypoints template as a geometry config (unlike other supervisely geometry classes, sly.GraphNodes requires geometry_config to be passed - it is necessary for object class initialization):
+Now let's create annotation class using our keypoints template as a geometry config (unlike other supervisely geometry classes, sly.GraphNodes requires geometry config to be passed - it is necessary for object class initialization):
 ```python
 person = sly.ObjClass("person", geometry_type=sly.GraphNodes, geometry_config=template)
 project_meta = sly.ProjectMeta(obj_classes=[person])

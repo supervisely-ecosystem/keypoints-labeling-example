@@ -139,6 +139,9 @@ project_meta = sly.ProjectMeta(obj_classes=[person])
 api.project.update_meta(project.id, project_meta.to_json())
 ```
 
+You can also go to Supervisely platform and check that class with shape "keypoints" was successfully added to your project:
+![screenshot-dev-supervise-ly-projects-16297-classes-1673802732556](https://user-images.githubusercontent.com/91027877/212556227-5551555e-4b41-4faf-a2e0-c3ed999032e0.png)
+
 Upload image:
 ```python
 image_info = api.image.upload_path(

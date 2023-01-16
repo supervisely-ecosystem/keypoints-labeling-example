@@ -1,4 +1,10 @@
+---
+description: How to create keypoints annotation in Python using Supervisely
+---
+
 # Supervisely Data Labelling Example: Keypoints
+
+## Introduction
 
 In this tutorial we will show you how to use sly.GraphNodes class to create data annotation for pose estimation / keypoints detection task. The tutorial illustrates basic upload-download scenario:
 
@@ -7,12 +13,32 @@ In this tutorial we will show you how to use sly.GraphNodes class to create data
 * programmatically create annotation (two bounding boxes and tag) and upload it to image
 * download image and annotation
 
-## Installation & Importing Necessary Libraries
+ℹ️ Everything you need to reproduce [this tutorial is on GitHub](https://github.com/supervisely-ecosystem/keypoints-labelling-example): source code, Visual Studio Code configuration, and a shell script for creating virtual env.
 
-Run the following command in terminal:
+## How to debug this tutorial
+
+**Step 1.** Prepare  `~/supervisely.env` file with credentials. [Learn more here.](../basics-of-authentication.md#use-.env-file-recommended)
+
+**Step 2.** Clone [repository](https://github.com/supervisely-ecosystem/keypoints-labelling-example) with source code and demo data and create [Virtual Environment](https://docs.python.org/3/library/venv.html).
+
+```bash
+git clone https://github.com/supervisely-ecosystem/keypoints-labelling-example
+cd keypoints-labelling-example
+./create_venv.sh
 ```
-pip install supervisely
+
+**Step 3.** Open repository directory in Visual Studio Code.&#x20;
+
+```bash
+code -r .
 ```
+
+**Step 4.** Start debugging `src/main.py`&#x
+
+
+## Python Code
+
+## Importing Necessary Libraries
 
 Import necessary libraries:
 

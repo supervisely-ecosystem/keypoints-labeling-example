@@ -207,4 +207,4 @@ ann.draw_pretty(image, output_path=output_path, thickness=7)
 ```
 
 Result:
-![person_with_dog_labelled](https://user-images.githubusercontent.com/91027877/212648158-09e86a2e-410c-4c18-8d9a-a29554ec45f8.jpg)
+![person_with_dog_labeled](https://user-images.githubusercontent.com/91027877/212678270-ab96b083-d4a9-4ad0-8bb2-601564ab19da.jpg)

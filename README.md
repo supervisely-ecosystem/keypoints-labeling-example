@@ -2,7 +2,7 @@
 description: How to create keypoints annotation in Python using Supervisely
 ---
 
-# Supervisely Data Labelling Example: Keypoints
+# Supervisely Data Labeling Example: Keypoints
 
 ## Introduction
 

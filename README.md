@@ -17,7 +17,7 @@ In this tutorial we will show you how to use sly.GraphNodes class to create data
 
 ## How to debug this tutorial
 
-**Step 1.** Prepare  `~/supervisely.env` file with credentials. [Learn more here.](../basics-of-authentication.md#use-.env-file-recommended)
+**Step 1.** Prepare  `~/supervisely.env` file with credentials. [Learn more here.](https://developer.supervise.ly/getting-started/basics-of-authentication)
 
 **Step 2.** Clone [repository](https://github.com/supervisely-ecosystem/keypoints-labelling-example) with source code and demo data and create [Virtual Environment](https://docs.python.org/3/library/venv.html).
 

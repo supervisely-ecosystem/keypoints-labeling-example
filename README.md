@@ -205,3 +205,6 @@ ann.draw_pretty(image, output_path=output_path, thickness=7)
 
 Result:
 ![person_with_dog_labelled](https://user-images.githubusercontent.com/91027877/212648158-09e86a2e-410c-4c18-8d9a-a29554ec45f8.jpg)
+
+You can also check that keypoints annotation was successfully created in Annotation Tool:
+![labelled](https://user-images.githubusercontent.com/91027877/212652174-ee81e8e0-fe4d-4a6d-957a-8398d6120b55.gif)

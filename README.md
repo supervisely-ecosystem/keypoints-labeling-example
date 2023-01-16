@@ -27,13 +27,14 @@ cd keypoints-labelling-example
 ./create_venv.sh
 ```
 
-**Step 3.** Open repository directory in Visual Studio Code.&#x20;
+**Step 3.** Open repository directory in `Visual Studio Code`
 
 ```bash
 code -r .
 ```
 
-**Step 4.** Start debugging `src/main.py`&#x
+**Step 4.** Start debugging `src/main.py`
+![vscode_screen](https://user-images.githubusercontent.com/91027877/212641111-5f9bb616-ab1a-4c7b-b704-0cc5d03805d0.jpg)
 
 
 ## Python Code
@@ -165,8 +166,9 @@ project_meta = sly.ProjectMeta(obj_classes=[person])
 api.project.update_meta(project.id, project_meta.to_json())
 ```
 
-You can also go to Supervisely platform and check that class with shape "keypoints" was successfully added to your project:
-![screenshot-dev-supervise-ly-projects-16297-classes-1673802732556](https://user-images.githubusercontent.com/91027877/212556227-5551555e-4b41-4faf-a2e0-c3ed999032e0.png)
+You can also go to Supervisely platform and check that class with shape "Keypoints" was successfully added to your project:
+![class_screen](https://user-images.githubusercontent.com/91027877/212641376-e91221f9-8daf-4aa2-935e-c4d15a13ac88.jpg)
+
 
 Upload image:
 ```python

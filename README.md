@@ -130,10 +130,7 @@ team = my_teams[0]
 workspace = api.workspace.get_list(team.id)[0]
 ```
 
-Visualize input image:
-```python
-visualize_image("images/person_with_dog.jpg")
-```
+Input image:
 ![person_with_dog](https://user-images.githubusercontent.com/91027877/212552599-294c41aa-72bb-4243-8a41-5fbfc73f9a0e.jpg)
 
 Create project and dataset:

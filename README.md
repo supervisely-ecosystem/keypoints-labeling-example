@@ -161,7 +161,7 @@ image_info = api.image.upload_path(
 Build keypoints graph:
 ```python
 nodes = [
-    sly.Node(label="nose", row=146, col=702),
+    sly.Node(label="nose", row=146, col=670),
     sly.Node(label="left_eye", row=130, col=644),
     sly.Node(label="right_eye", row=135, col=701),
     sly.Node(label="left_ear", row=137, col=642),

@@ -2,8 +2,6 @@
 import supervisely as sly
 from supervisely.geometry.graph import Node, KeypointsTemplate
 import os
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 import json
 from dotenv import load_dotenv
 
@@ -80,7 +78,7 @@ image_info = api.image.upload_path(
 # create annotation and upload to image
 # build keypoints graph
 nodes = [
-    sly.Node(label="nose", row=146, col=702),
+    sly.Node(label="nose", row=146, col=670),
     sly.Node(label="left_eye", row=130, col=644),
     sly.Node(label="right_eye", row=135, col=701),
     sly.Node(label="left_ear", row=137, col=642),
@@ -111,14 +109,3 @@ ann_json = api.annotation.download_json(image_info.id)
 ann = sly.Annotation.from_json(ann_json, project_meta)
 output_path = "images/person_with_dog_labelled.jpg"
 ann.draw_pretty(image, output_path=output_path, thickness=3)
-# function for image visualization
-def visualize_image(image_filepath):
-    plt.figure(figsize=(12, 8))
-    image = mpimg.imread(image_filepath)
-    imageplot = plt.imshow(image)
-    plt.axis("off")
-    plt.show()
-
-
-# visualize result
-visualize_image(output_path)

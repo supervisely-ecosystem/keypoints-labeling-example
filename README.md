@@ -47,8 +47,6 @@ Import necessary libraries:
 import supervisely as sly
 from supervisely.geometry.graph import Node, KeypointsTemplate
 import os
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 import json
 from dotenv import load_dotenv
 ```
@@ -59,20 +57,7 @@ Before we will start creating our project, let's learn how to create keypoints t
 
 We will need an image to create and visualize our keypoints template.
 
-In tutorial we are going to visualize images often, so let's write a simple function for image visualozation:
-```python
-def visualize_image(image_filepath):
-  plt.figure(figsize=(12, 8))
-  image = mpimg.imread(image_filepath)
-  imageplot = plt.imshow(image)
-  plt.axis('off')
-  plt.show()
-```
-
-Visualize image for building keypoints template:
-```python
-visualize_image("images/girl.jpg")
-```
+Image for building keypoints template:
 ![girl](https://user-images.githubusercontent.com/91027877/212552404-f6f6a93c-ff15-43ba-ab24-32a71957bb9f.jpg)
 
 Create keypoints template:
@@ -124,7 +109,6 @@ Visualize your keypoints template:
 template_img = sly.image.read("images/girl.jpg")
 template.draw(image=template_img, thickness=7)
 sly.image.write("images/template.jpg", template_img)
-visualize_image("images/template.jpg")
 ```
 ![template](https://user-images.githubusercontent.com/91027877/212552424-87a0c197-63ce-46d1-95b7-aefd640076a8.jpg)
 
@@ -222,8 +206,5 @@ output_path = "images/person_with_dog_labelled.jpg"
 ann.draw_pretty(image, output_path=output_path, thickness=7)
 ```
 
-Visualize result:
-```python
-visualize_image(output_path)
-```
+Result:
 ![person_with_dog_labelled](https://user-images.githubusercontent.com/91027877/212553004-8062ad93-c1da-46e9-ab53-956f4e947f87.jpg)

@@ -57,7 +57,7 @@ template_json = template.to_json()
 
 # programmatically create keypoints annotation
 # authentication
-# learn more here - https://developer.supervise.ly/getting-started/first-steps/basics-of-authentication
+# learn more here - https://developer.supervisely.com/getting-started/first-steps/basics-of-authentication
 load_dotenv(os.path.expanduser("~/supervisely.env"))
 api = sly.Api.from_env()
 my_teams = api.team.get_list()
